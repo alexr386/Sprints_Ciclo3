@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario inicial</title>
+	<link rel="stylesheet" href="estilos.css"> 
+	<script src="js/main.js"></script>
+</head>
+<header>
+	<h1>Logo</h1>
+</header>
+<body>
+	<div id="container">
+		<form name="form-registro" action="index.html" id="form-registro">
+			<p>Registro</p>
+			<label for="username">
+	            Username 
+	        </label><br>
+	        <input type="text" name="username" id="username" value="" placeholder="" maxlength="10px" pattern="[0-9]+">
+	        <br>
+	        <label for="contrasena">
+	            Contraseña 
+	        </label><br>
+	        <input type="password" name="contrasena" id="contrasena" value="" placeholder="" maxlength="10px" pattern="[0-9]+">
+	        <br>
+	        <label for="preg_seguridad">
+	            Pregunta de seguridad
+	        </label><br>
+	        <select id="preg_seguridad" name="preg_seguridad">
+		    <option value="nombre_mi_mascota">¿Cuál es el nombre de mi mascota?</option>
+		    <option value="estudie_primaria">¿Donde estudié la primaria?</option>
+		    <option value="pelicula_favorita">¿Cuál es mi película favorita?</option>
+		    </select>
+	       <!--  <input type="text" name="preg_seguridad" id="preg_seguridad" value="" placeholder="" maxlength="10px" pattern="[0-9]+"> -->
+	        <br>
+	        <label for="resp_seguridad">
+	            Respuesta de seguridad 
+	        </label><br>
+	        <input type="text" name="resp_seguridad" id="resp_seguridad" value="" placeholder="" maxlength="10px" pattern="[0-9]+">
+	        <br>
+	        <br>
+			<button type="button" name="btn-registrar" id="btn-registrar" onclick="">Registrar</button><br>
+			<a href="login.html" id="enlace-login">Login</a>
+		</form>
+		
+	</div>
+	
+</body>
+</html>
